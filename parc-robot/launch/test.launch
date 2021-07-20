@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="parc-robot" type="obstacles.py" name="get_closest_obstacle_direction" output="screen"/>
+
+</launch>

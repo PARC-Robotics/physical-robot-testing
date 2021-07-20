@@ -1,0 +1,9 @@
+<launch>
+
+    <!-- launch robot state publisher and description -->
+    <include file="$(find turtlebot3_bringup)/launch/turtlebot3_remote.launch"/>
+
+    <!-- launch rviz -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find parc_robot)/rviz/robot.rviz" />
+
+</launch>
