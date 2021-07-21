@@ -6,6 +6,9 @@ from std_msgs.msg import Float32
 
 class closestObstacle():
     def __init__(self):
+        # initialize ros node
+        rospy.init_node('closest_obstacle')
+        
         # initialize subscriber
         self.scan_subscriber = rospy.Subscriber("scan", LaserScan, self.scanCallback)
 
