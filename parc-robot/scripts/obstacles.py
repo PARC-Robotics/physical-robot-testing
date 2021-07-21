@@ -15,7 +15,7 @@ class closestObstacle():
         # initialize publisher
         self.angle_publisher = rospy.Publisher("closest_obstacle/angle", Float32, queue_size=4)
 
-    def scanCallback(self, data, msg):
+    def scanCallback(self, msg):
         # get laserscan data
         angle_min = msg.angle_min
         angle_max = msg.angle_max
